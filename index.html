@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Logging Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Case Logging Tool</h1>
+
+        <!-- Issue Tab -->
+        <div class="tab">
+            <div class="tab-title">Issue <span class="required">*</span></div>
+            <textarea id="issue" rows="4" placeholder="Type your issue here..."></textarea>
+        </div>
+
+        <!-- Service Status Tab -->
+        <div class="tab">
+            <div class="tab-title">Service Status <span class="required">*</span></div>
+            <select id="serviceStatus">
+                <option value="" disabled selected>Select Service Status</option>
+            </select>
+        </div>
+
+        <!-- Case Status Tab -->
+        <div class="tab">
+            <div class="tab-title">Case Status <span class="required">*</span></div>
+            <select id="caseStatus">
+                <option value="" disabled selected>Select Case Status</option>
+            </select>
+        </div>
+
+        <button onclick="submitForm()">Submit</button>
+        <p id="result" class="fade-in"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
