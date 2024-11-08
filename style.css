@@ -1,9 +1,9 @@
 /* Basic reset */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'SF Pro', Arial, sans-serif; }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'SF Pro', sans-serif;
+    background-color: #f9f9f9; /* Off-white background */
     color: #333;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@ body {
 .container {
     max-width: 500px;
     width: 100%;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -24,7 +24,7 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 24px;
-    color: #0073e6;
+    color: #333;
 }
 
 .tab {
@@ -32,9 +32,9 @@ h1 {
 }
 
 .tab-title {
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 8px;
-    color: #0073e6;
+    color: #333;
     font-size: 16px;
 }
 
@@ -46,38 +46,40 @@ textarea, select {
     border: 1px solid #ccc;
     transition: border 0.3s ease;
     outline: none;
+    height: 46px; /* Ensuring all inputs are the same height */
 }
 
 textarea:focus, select:focus {
-    border-color: #0073e6;
+    border-color: #666;
 }
 
 button {
     width: 100%;
     padding: 12px;
     font-size: 16px;
-    background-color: #0073e6;
-    color: #fff;
+    background-color: #333;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background 0.3s ease;
+    font-weight: 500;
 }
 
 button:hover {
-    background-color: #005bb5;
+    background-color: #222;
 }
 
 #result {
     margin-top: 20px;
     padding: 10px;
-    font-weight: bold;
+    font-weight: 500;
     text-align: center;
-    color: #0073e6;
+    color: #333;
     display: none;
-    border: 1px solid #0073e6;
+    border: 1px solid #333;
     border-radius: 4px;
-    background-color: #e8f4ff;
+    background-color: #f0f0f0;
 }
 
 .required {
