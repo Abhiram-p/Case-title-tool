@@ -5,38 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case Logging Tool</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF+Pro:wght@400;500;700&display=swap">
 </head>
 <body>
     <div class="container">
-        <h1>Case Logging Tool</h1>
-
-        <!-- Issue Tab -->
+        <h1>Case Title Tool</h1>
+        
+        <!-- Issue tab -->
         <div class="tab">
-            <div class="tab-title">Issue <span class="required">*</span></div>
-            <textarea id="issue" rows="2" placeholder="Type your issue here..."></textarea>
+            <label for="issue" class="tab-title">Issue <span class="required">*</span></label>
+            <textarea id="issue" placeholder="Type your issue here..."></textarea>
         </div>
 
-        <!-- Service Status Tab -->
+        <!-- Service Status tab -->
         <div class="tab">
-            <div class="tab-title">Service Status <span class="required">*</span></div>
-            <select id="serviceStatus">
-                <option value="" disabled selected>Select Service Status</option>
+            <label for="service-status" class="tab-title">Service Status <span class="required">*</span></label>
+            <select id="service-status">
+                <option>Select Service Status</option>
+                <!-- Add options here dynamically -->
             </select>
         </div>
 
-        <!-- Case Status Tab -->
+        <!-- Case Status tab -->
         <div class="tab">
-            <div class="tab-title">Case Status <span class="required">*</span></div>
-            <select id="caseStatus">
-                <option value="" disabled selected>Select Case Status</option>
+            <label for="case-status" class="tab-title">Case Status <span class="required">*</span></label>
+            <select id="case-status">
+                <option>Select Case Status</option>
+                <!-- Add options here dynamically -->
             </select>
         </div>
 
-        <button onclick="submitForm()">Submit</button>
-        <p id="result" class="fade-in"></p>
+        <!-- Submit button -->
+        <button type="button">Submit</button>
+
+        <!-- Credits -->
+        <div class="credits">-by Bl423</div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
