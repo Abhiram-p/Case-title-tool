@@ -1,5 +1,5 @@
-INFO Only
-Delayed
+INFO only
 No delay
+Delayed
 Refund
 Escalation
