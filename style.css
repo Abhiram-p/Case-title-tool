@@ -114,3 +114,10 @@ button:hover {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+.credits {
+    text-align: right; /* Align text to the right */
+    font-size: 14px;    /* Optional: adjust font size if necessary */
+    color: #333;        /* Optional: set text color */
+    margin-top: 20px;   /* Optional: add some margin for spacing */
+}
